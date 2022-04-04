@@ -10,7 +10,7 @@ public class App {
         obj1.actOnEvent();
         // Events werden kumuliert ... 0 + 2
         Helper.ausgabe(obj1.getCounter());
-        
+        Helper.ausgabe("------------------");
         Singleton obj2 = Singleton.getInstance();
         Helper.ausgabe(obj2);
         obj2.actOnEvent();
@@ -18,6 +18,7 @@ public class App {
         obj2.actOnEvent();
         // Events werden kumuliert ... 2 + 3
         Helper.ausgabe(obj2.getCounter());
+        Helper.ausgabe("------------------");
 
         Singleton obj3 = Singleton.getInstance();
         Helper.ausgabe(obj3);
